@@ -11,30 +11,30 @@ const Experience = () => {
 
 
         <div className='experience__frontend'>
-          <h3>Frontend Development</h3>
+          <h3>Game Engine</h3>
           <div className='experience__content'>
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
-                <h4>C</h4>
-                <small className='text-light'>Experienced</small>
+                <h4>Unreal</h4>
+                {/* <small className='text-light'>Experienced</small> */}
               </div>
             </article>
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
-                <h4>C++</h4>
-                <small className='text-light'>Intermediate</small>
+                <h4>Unity</h4>
+                {/* <small className='text-light'>Intermediate</small> */}
               </div>
             </article>
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
-                <h4>Java</h4>
-                <small className='text-light'>Experienced</small>
+                <h4>Godot</h4>
+                {/* <small className='text-light'>Experienced</small> */}
               </div>
             </article>
-            <article className='experience__details'>
+            {/* <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
                 <h4>Python</h4>
@@ -54,54 +54,33 @@ const Experience = () => {
                 <h4>C#</h4>
                 <small className='text-light'>Experienced</small>
               </div>
-            </article>
+            </article> */}
           </div>
         </div>
 
 
         <div className='experience__backend'>
-          <h3>Platform Experienced</h3>
+          <h3>3D Softwares</h3>
           <div className='experience__content'>
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
-                <h4>Unity</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Unreal</h4>
-                <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Godot</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
                 <h4>Maya</h4>
-                <small className='text-light'>Experienced</small>
+                {/* <small className='text-light'>Experienced</small> */}
               </div>
             </article>
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
                 <h4>Blender</h4>
-                <small className='text-light'>Experienced</small>
+                {/* <small className='text-light'>Intermediate</small> */}
               </div>
             </article>
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
-                <h4>Zbrush</h4>
-                <small className='text-light'>Experienced</small>
+                <h4>Zebrush</h4>
+                {/* <small className='text-light'>Experienced</small> */}
               </div>
             </article>
           </div>
