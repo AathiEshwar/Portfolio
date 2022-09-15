@@ -30,7 +30,7 @@ const About = () => {
           <p>
           I am a student looking for an internship for video game design ,
           fully committed to designing and developing unique and innovative games
-          that users will love
+          that users will love.
           </p>
           <a href='#contact' className='btn btn-primary'>Let's Talk</a>
         </div>

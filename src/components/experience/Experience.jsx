@@ -17,44 +17,20 @@ const Experience = () => {
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
                 <h4>Unreal</h4>
-                {/* <small className='text-light'>Experienced</small> */}
               </div>
             </article>
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
                 <h4>Unity</h4>
-                {/* <small className='text-light'>Intermediate</small> */}
               </div>
             </article>
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
                 <h4>Godot</h4>
-                {/* <small className='text-light'>Experienced</small> */}
               </div>
             </article>
-            {/* <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Python</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>Kotlin</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className='experience__details-icon'/>
-              <div>
-                <h4>C#</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article> */}
           </div>
         </div>
 
@@ -66,21 +42,18 @@ const Experience = () => {
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
                 <h4>Maya</h4>
-                {/* <small className='text-light'>Experienced</small> */}
               </div>
             </article>
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
                 <h4>Blender</h4>
-                {/* <small className='text-light'>Intermediate</small> */}
               </div>
             </article>
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
-                <h4>Zebrush</h4>
-                {/* <small className='text-light'>Experienced</small> */}
+                <h4>Zbrush</h4>
               </div>
             </article>
           </div>
