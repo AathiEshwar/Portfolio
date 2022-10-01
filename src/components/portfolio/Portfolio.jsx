@@ -4,6 +4,7 @@ import IMG1 from '../../assets/portfolio1.png';
 import IMG2 from '../../assets/portfolio2.png';
 import IMG3 from '../../assets/portfolio3.png';
 import IMG4 from '../../assets/portfolio4.png';
+import IMG5 from '../../assets/portfolio5.jpg';
 
 const data = [
   {
@@ -39,6 +40,16 @@ const envScene = [
   },
 ]
 
+const platformGame = [
+  {
+    id: 1,
+    image: IMG5,
+    title: '',
+    showDemo: true,
+    demo: 'https://drive.google.com/file/d/14Z3UkPxNPQbytNifN1SXj8VqcRQxUguB/view?usp=sharing_eil_se_dm&ts=6337f2e2',
+  },
+]
+
 const Portfolio = () => {
   return (
     <section id='portfolio'>
@@ -67,9 +78,30 @@ const Portfolio = () => {
 
       <h3 style={{ marginLeft: '43%', marginBottom: '10px', marginTop: '10px'}}>Environmental Scene</h3>
 
+<div className='container portfolio__container'>
+  {
+    envScene.map(({ id, image, title, demo, showDemo }) => {
+      return (
+        <article key={id} className='portfolio__item'>
+          <div className="portfolio__item-image">
+            <img src={image} alt={title} />
+          </div>
+          <h3>{title}</h3>
+          <div className='portfolio__item-cta'>
+            {showDemo && 
+            <a href={demo} className='btn btn-primary'>Live Demo</a> }
+          </div>
+        </article>
+      )
+    })
+  }
+</div>
+
+      <h3 style={{ marginLeft: '43%', marginBottom: '10px', marginTop: '10px'}}>Platformer Game</h3>
+
       <div className='container portfolio__container'>
         {
-          envScene.map(({ id, image, title, demo, showDemo }) => {
+          platformGame.map(({ id, image, title, demo, showDemo }) => {
             return (
               <article key={id} className='portfolio__item'>
                 <div className="portfolio__item-image">
