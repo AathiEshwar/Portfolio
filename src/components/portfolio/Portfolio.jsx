@@ -5,6 +5,8 @@ import IMG2 from '../../assets/portfolio2.png';
 import IMG3 from '../../assets/portfolio3.png';
 import IMG4 from '../../assets/portfolio4.png';
 import IMG5 from '../../assets/portfolio5.jpg';
+import IMG6 from '../../assets/portfolio6.png';
+import IMG7 from '../../assets/portfolio7.png';
 
 const data = [
   {
@@ -50,12 +52,29 @@ const platformGame = [
   },
 ]
 
+const metaHumans = [
+  {
+    id: 1,
+    image: IMG6,
+    title: '',
+    showDemo: false,
+    demo: 'https://github.com',
+  },
+  {
+    id: 2,
+    image: IMG7,
+    title: '',
+    showDemo: false,
+    demo: 'https://github.com',
+  }
+]
+
 const Portfolio = () => {
   return (
     <section id='portfolio'>
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
-      <h3 style={{ marginLeft: '43%', marginBottom: '10px'}}>Top Down View Game</h3>
+      <h3 className='portfolio__name'>Top Down View Game</h3>
 
       <div className='container portfolio__container'>
         {
@@ -67,8 +86,8 @@ const Portfolio = () => {
                 </div>
                 <h3>{title}</h3>
                 <div className='portfolio__item-cta'>
-                  {showDemo && 
-                  <a href={demo} className='btn btn-primary'>Live Demo</a> }
+                  {showDemo &&
+                    <a href={demo} className='btn btn-primary'>Live Demo</a>}
                 </div>
               </article>
             )
@@ -76,28 +95,28 @@ const Portfolio = () => {
         }
       </div>
 
-      <h3 style={{ marginLeft: '43%', marginBottom: '10px', marginTop: '10px'}}>Environmental Scene</h3>
+      <h3 className='portfolio__name'>Environmental Scene</h3>
 
-<div className='container portfolio__container'>
-  {
-    envScene.map(({ id, image, title, demo, showDemo }) => {
-      return (
-        <article key={id} className='portfolio__item'>
-          <div className="portfolio__item-image">
-            <img src={image} alt={title} />
-          </div>
-          <h3>{title}</h3>
-          <div className='portfolio__item-cta'>
-            {showDemo && 
-            <a href={demo} className='btn btn-primary'>Live Demo</a> }
-          </div>
-        </article>
-      )
-    })
-  }
-</div>
+      <div className='container portfolio__container'>
+        {
+          envScene.map(({ id, image, title, demo, showDemo }) => {
+            return (
+              <article key={id} className='portfolio__item'>
+                <div className="portfolio__item-image">
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <div className='portfolio__item-cta'>
+                  {showDemo &&
+                    <a href={demo} className='btn btn-primary'>Live Demo</a>}
+                </div>
+              </article>
+            )
+          })
+        }
+      </div>
 
-      <h3 style={{ marginLeft: '43%', marginBottom: '10px', marginTop: '10px'}}>Platformer Game</h3>
+      <h3 className='portfolio__name'>Platformer Game</h3>
 
       <div className='container portfolio__container'>
         {
@@ -109,8 +128,29 @@ const Portfolio = () => {
                 </div>
                 <h3>{title}</h3>
                 <div className='portfolio__item-cta'>
-                  {showDemo && 
-                  <a href={demo} className='btn btn-primary'>Live Demo</a> }
+                  {showDemo &&
+                    <a href={demo} className='btn btn-primary'>Live Demo</a>}
+                </div>
+              </article>
+            )
+          })
+        }
+      </div>
+
+      <h3 className='portfolio__name'>Meta Humans</h3>
+
+      <div className='container portfolio__container'>
+        {
+          metaHumans.map(({ id, image, title, demo, showDemo }) => {
+            return (
+              <article key={id} className='portfolio__item'>
+                <div className="portfolio__item-image">
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <div className='portfolio__item-cta'>
+                  {showDemo &&
+                    <a href={demo} className='btn btn-primary'>Live Demo</a>}
                 </div>
               </article>
             )

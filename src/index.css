@@ -137,10 +137,6 @@ img {
 
 @media screen and (max-width: 600px) {
     header {
-        height: 100vh;
-    }
-
-    .header__socials, .scroll_down {
-        display: none;
+        height: 60vh;
     }
 }

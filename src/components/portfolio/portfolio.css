@@ -32,6 +32,12 @@
     margin-bottom: 1rem;
 }
 
+.portfolio__name {
+    margin-left: 43%;
+    margin-bottom: 10px;
+    margin-top: 10px
+}
+
 @media screen and (max-width: 1024px) {
     .portfolio__container {
         grid-template-columns: 1fr  1fr;
@@ -43,5 +49,10 @@
     .portfolio__container {
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+    .portfolio__name {
+        margin-left: 25%;
+        margin-bottom: 10px;
+        margin-top: 10px
     }
 }

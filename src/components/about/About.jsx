@@ -21,16 +21,16 @@ const About = () => {
             <h5>Get to know</h5>
             <h2 className='about-text'>About Me</h2>
             <article className='about__card'>
-              <VscFolderLibrary className='about__icon'/>
+              <VscFolderLibrary className='about__icon' />
               <h5>Projects</h5>
               <small>10+ Completed</small>
             </article>
           </div>
 
           <p>
-          I am a student looking for an internship for video game design ,
-          fully committed to designing and developing unique and innovative games
-          that users will love.
+            I am a student looking for an internship for video game design ,
+            fully committed to designing and developing unique and innovative games
+            that users will love.
           </p>
           <a href='#contact' className='btn btn-primary'>Let's Talk</a>
         </div>
