@@ -7,6 +7,10 @@ import IMG4 from '../../assets/portfolio4.png';
 import IMG5 from '../../assets/portfolio5.jpg';
 import IMG6 from '../../assets/portfolio6.png';
 import IMG7 from '../../assets/portfolio7.png';
+import IMG8 from '../../assets/Snowworld.jpg';
+import IMG9 from '../../assets/fantasysnowWorld.jpg';
+import IMG10 from '../../assets/videoImage.png';
+import IMG11 from '../../assets/alreadyVideoPhoto.png';
 
 const data = [
   {
@@ -50,6 +54,13 @@ const platformGame = [
     showDemo: true,
     demo: 'https://drive.google.com/file/d/14Z3UkPxNPQbytNifN1SXj8VqcRQxUguB/view?usp=sharing_eil_se_dm&ts=6337f2e2',
   },
+  {
+    id: 2,
+    image: IMG11,
+    title: '',
+    showDemo: true,
+    demo: 'https://office-blog-giles.s3.ap-south-1.amazonaws.com/healthsystem.mp4',
+  },
 ]
 
 const metaHumans = [
@@ -66,7 +77,31 @@ const metaHumans = [
     title: '',
     showDemo: false,
     demo: 'https://github.com',
-  }
+  },
+]
+
+const photoaRealisitic = [
+  {
+    id: 1,
+    image: IMG8,
+    title: '',
+    showDemo: false,
+    demo: 'https://github.com',
+  },
+  {
+    id: 2,
+    image: IMG9,
+    title: '',
+    showDemo: false,
+    demo: 'https://github.com',
+  },
+  {
+    id: 3,
+    image: IMG10,
+    title: '',
+    showDemo: true,
+    demo: 'https://office-blog-giles.s3.ap-south-1.amazonaws.com/SNOWWORLD_(2).avi',
+  },
 ]
 
 const Portfolio = () => {
@@ -142,6 +177,27 @@ const Portfolio = () => {
       <div className='container portfolio__container'>
         {
           metaHumans.map(({ id, image, title, demo, showDemo }) => {
+            return (
+              <article key={id} className='portfolio__item'>
+                <div className="portfolio__item-image">
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <div className='portfolio__item-cta'>
+                  {showDemo &&
+                    <a href={demo} className='btn btn-primary'>Live Demo</a>}
+                </div>
+              </article>
+            )
+          })
+        }
+      </div>
+
+      <h3 className='portfolio__name'>PhotoaRealisitic Environment</h3>
+
+      <div className='container portfolio__container'>
+        {
+          photoaRealisitic.map(({ id, image, title, demo, showDemo }) => {
             return (
               <article key={id} className='portfolio__item'>
                 <div className="portfolio__item-image">
