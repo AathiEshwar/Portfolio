@@ -11,6 +11,7 @@ import IMG8 from '../../assets/Snowworld.jpg';
 import IMG9 from '../../assets/fantasysnowWorld.jpg';
 import IMG10 from '../../assets/videoImage.png';
 import IMG11 from '../../assets/alreadyVideoPhoto.png';
+import IMG12 from '../../assets/houdini.jpg';
 
 const data = [
   {
@@ -101,6 +102,16 @@ const photoaRealisitic = [
     title: '',
     showDemo: true,
     demo: 'https://office-blog-giles.s3.ap-south-1.amazonaws.com/SNOWWORLD_(2).avi',
+  },
+]
+
+const houdini = [
+  {
+    id: 1,
+    image: IMG12,
+    title: '',
+    showDemo: true,
+    demo: 'https://drive.google.com/file/d/1o0IGON7ULIOU-JHDVzTeGppPkHkVEYBl/view?ts=63e0c834',
   },
 ]
 
@@ -198,6 +209,27 @@ const Portfolio = () => {
       <div className='container portfolio__container'>
         {
           photoaRealisitic.map(({ id, image, title, demo, showDemo }) => {
+            return (
+              <article key={id} className='portfolio__item'>
+                <div className="portfolio__item-image">
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <div className='portfolio__item-cta'>
+                  {showDemo &&
+                    <a href={demo} className='btn btn-primary'>Live Demo</a>}
+                </div>
+              </article>
+            )
+          })
+        }
+      </div>
+
+      <h3 className='portfolio__name'>Houdini</h3>
+
+      <div className='container portfolio__container'>
+        {
+          houdini.map(({ id, image, title, demo, showDemo }) => {
             return (
               <article key={id} className='portfolio__item'>
                 <div className="portfolio__item-image">

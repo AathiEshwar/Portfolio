@@ -56,6 +56,12 @@ const Experience = () => {
                 <h4>Zbrush</h4>
               </div>
             </article>
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>Houdini</h4>
+              </div>
+            </article>
           </div>
         </div>
       </div>
