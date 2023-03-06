@@ -81,7 +81,7 @@ const metaHumans = [
   },
 ]
 
-const photoaRealisitic = [
+const photoRealisitic = [
   {
     id: 1,
     image: IMG8,
@@ -204,11 +204,11 @@ const Portfolio = () => {
         }
       </div>
 
-      <h3 className='portfolio__name'>PhotoaRealisitic Environment</h3>
+      <h3 className='portfolio__name'>PhotoRealisitic Environment</h3>
 
       <div className='container portfolio__container'>
         {
-          photoaRealisitic.map(({ id, image, title, demo, showDemo }) => {
+          photoRealisitic.map(({ id, image, title, demo, showDemo }) => {
             return (
               <article key={id} className='portfolio__item'>
                 <div className="portfolio__item-image">
