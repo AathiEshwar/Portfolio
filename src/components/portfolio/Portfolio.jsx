@@ -12,6 +12,7 @@ import IMG9 from '../../assets/fantasysnowWorld.jpg';
 import IMG10 from '../../assets/videoImage.png';
 import IMG11 from '../../assets/alreadyVideoPhoto.png';
 import IMG12 from '../../assets/houdini.jpg';
+import IMG13 from '../../assets/portfolio8.png';
 
 const data = [
   {
@@ -44,6 +45,13 @@ const envScene = [
     title: '',
     showDemo: false,
     demo: 'https://github.com',
+  },
+  {
+    id: 1,
+    image: IMG13,
+    title: '',
+    showDemo: true,
+    demo: 'https://drive.google.com/file/d/1Cmbnq4afNLOXyZRiNakR3rdhvQMgRxhd/view?usp=drive_web',
   },
 ]
 
