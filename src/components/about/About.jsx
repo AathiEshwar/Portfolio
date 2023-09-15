@@ -28,9 +28,15 @@ const About = () => {
           </div>
 
           <p>
-            I am a student looking for an internship for video game design ,
-            fully committed to designing and developing unique and innovative games
-            that users will love.
+            Dedicated and creative Game Developer and
+            Designer with 1 year of experience in the video
+            game industry.
+            Collaborated cross-functionally to conceptualize, develop, and design
+            gameplay features, mechanics, and systems for mobile.Contributed to the
+            ideation, creation, and refinement of game concepts, narratives, and
+            immersive game worlds. Designed and implemented engaging gameplay
+            mechanics, including character interactions, combat systems, and user
+            interfaces.
           </p>
           <a href='#contact' className='btn btn-primary'>Let's Talk</a>
         </div>
