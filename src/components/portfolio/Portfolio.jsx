@@ -13,6 +13,11 @@ import IMG10 from '../../assets/videoImage.png';
 import IMG11 from '../../assets/alreadyVideoPhoto.png';
 import IMG12 from '../../assets/houdini.jpg';
 import IMG13 from '../../assets/portfolio8.png';
+import IMG14 from '../../assets/maya1.jpg';
+import IMG15 from '../../assets/maya2.jpg';
+import IMG16 from '../../assets/maya3.jpg';
+import IMG17 from '../../assets/maya4.jpg';
+import IMG18 from '../../assets/maya5.jpg';
 
 const data = [
   {
@@ -120,6 +125,44 @@ const houdini = [
     title: '',
     showDemo: true,
     demo: 'https://drive.google.com/file/d/1o0IGON7ULIOU-JHDVzTeGppPkHkVEYBl/view?ts=63e0c834',
+  },
+]
+
+const maya = [
+  {
+    id: 1,
+    image: IMG14,
+    title: '',
+    showDemo: false,
+    demo: 'https://github.com',
+  },
+  {
+    id: 2,
+    image: IMG15,
+    title: '',
+    showDemo: false,
+    demo: 'https://github.com',
+  },
+  {
+    id: 3,
+    image: IMG16,
+    title: '',
+    showDemo: false,
+    demo: 'https://github.com',
+  },
+  {
+    id: 4,
+    image: IMG17,
+    title: '',
+    showDemo: false,
+    demo: 'https://github.com',
+  },
+  {
+    id: 5,
+    image: IMG18,
+    title: '',
+    showDemo: false,
+    demo: 'https://github.com',
   },
 ]
 
@@ -238,6 +281,27 @@ const Portfolio = () => {
       <div className='container portfolio__container'>
         {
           houdini.map(({ id, image, title, demo, showDemo }) => {
+            return (
+              <article key={id} className='portfolio__item'>
+                <div className="portfolio__item-image">
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <div className='portfolio__item-cta'>
+                  {showDemo &&
+                    <a href={demo} className='btn btn-primary'>Live Demo</a>}
+                </div>
+              </article>
+            )
+          })
+        }
+      </div>
+
+      <h3 className='portfolio__name'>Maya</h3>
+
+      <div className='container portfolio__container'>
+        {
+          maya.map(({ id, image, title, demo, showDemo }) => {
             return (
               <article key={id} className='portfolio__item'>
                 <div className="portfolio__item-image">

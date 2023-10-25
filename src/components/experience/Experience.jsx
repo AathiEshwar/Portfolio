@@ -11,7 +11,7 @@ const Experience = () => {
 
 
         <div className='experience__frontend'>
-          <h3>Game Engine</h3>
+          <h3 style={{marginTop: '25px', marginBottom: '25px'}}>Game Engine</h3>
           <div className='experience__content'>
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
@@ -36,7 +36,7 @@ const Experience = () => {
 
 
         <div className='experience__backend'>
-          <h3>3D Softwares</h3>
+          <h3 style={{marginTop: '25px', marginBottom: '25px'}}>3D Softwares</h3>
           <div className='experience__content'>
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
@@ -60,6 +60,30 @@ const Experience = () => {
               <BsPatchCheckFill className='experience__details-icon'/>
               <div>
                 <h4>Houdini</h4>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div className='experience__backend'>
+          <h3 style={{marginTop: '25px', marginBottom: '25px'}}>2D Softwares</h3>
+          <div className='experience__content'>
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>Adobe InDesign</h4>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>Figma</h4>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__details-icon'/>
+              <div>
+                <h4>Adobe Illustrator</h4>
               </div>
             </article>
           </div>
