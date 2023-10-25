@@ -11,7 +11,7 @@ const Experience = () => {
 
 
         <div className='experience__frontend'>
-          <h3 style={{marginTop: '25px', marginBottom: '25px'}}>Game Engine</h3>
+          <h3 style={{marginTop: '50px', marginBottom: '50px'}}>Game Engine</h3>
           <div className='experience__content'>
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
@@ -36,7 +36,7 @@ const Experience = () => {
 
 
         <div className='experience__backend'>
-          <h3 style={{marginTop: '25px', marginBottom: '25px'}}>3D Softwares</h3>
+          <h3 style={{marginTop: '50px', marginBottom: '50px'}}>3D Softwares</h3>
           <div className='experience__content'>
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
@@ -66,7 +66,7 @@ const Experience = () => {
         </div>
 
         <div className='experience__backend'>
-          <h3 style={{marginTop: '25px', marginBottom: '25px'}}>2D Softwares</h3>
+          <h3 style={{marginTop: '50px', marginBottom: '50px'}}>2D Softwares</h3>
           <div className='experience__content'>
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon'/>
