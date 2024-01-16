@@ -18,6 +18,17 @@ import IMG15 from '../../assets/maya2.jpg';
 import IMG16 from '../../assets/maya3.jpg';
 import IMG17 from '../../assets/maya4.jpg';
 import IMG18 from '../../assets/maya5.jpg';
+import IMG19 from '../../assets/env1.png';
+import IMG20 from '../../assets/env2.png';
+import IMG21 from '../../assets/env3.png';
+import IMG22 from '../../assets/env4.png';
+import IMG23 from '../../assets/env5.png';
+import IMG24 from '../../assets/env6.png';
+import IMG25 from '../../assets/env7.png';
+import IMG26 from '../../assets/env8.png';
+import IMG27 from '../../assets/env9.png';
+import IMG28 from '../../assets/env10.png';
+import IMG29 from '../../assets/cinseq.jpeg';
 
 const data = [
   {
@@ -43,6 +54,23 @@ const data = [
   },
 ]
 
+const cinseq = [
+  {
+    id: 1,
+    image: IMG29,
+    title: '',
+    showDemo: true,
+    demo: 'https://drive.google.com/file/d/1bk7A17MCZvX2JLnI5D_fDhX9NpBiiOXl/view',
+  },
+  {
+    id: 1,
+    image: IMG3,
+    title: '',
+    showDemo: true,
+    demo: 'https://drive.google.com/file/d/1pYjSPCMG6Z0NkBAcr_Ljjzhvb5meHb2Z/view?usp=sharing',
+  },
+]
+
 const envScene = [
   {
     id: 1,
@@ -53,10 +81,80 @@ const envScene = [
   },
   {
     id: 1,
-    image: IMG13,
+    image: IMG19,
     title: '',
-    showDemo: true,
-    demo: 'https://drive.google.com/file/d/1Cmbnq4afNLOXyZRiNakR3rdhvQMgRxhd/view?usp=drive_web',
+    showDemo: false,
+    demo: 'https://github.com',
+  },
+  {
+    id: 1,
+    image: IMG20,
+    title: '',
+    showDemo: false,
+    demo: 'https://github.com',
+  },
+  {
+    id: 1,
+    image: IMG21,
+    title: '',
+    showDemo: false,
+    demo: 'https://github.com',
+  },
+  {
+    id: 1,
+    image: IMG22,
+    title: '',
+    showDemo: false,
+    demo: 'https://github.com',
+  },
+  {
+    id: 1,
+    image: IMG23,
+    title: '',
+    showDemo: false,
+    demo: 'https://github.com',
+  },
+  {
+    id: 1,
+    image: IMG24,
+    title: '',
+    showDemo: false,
+    demo: 'https://github.com',
+  },
+  {
+    id: 1,
+    image: IMG24,
+    title: '',
+    showDemo: false,
+    demo: 'https://github.com',
+  },
+  {
+    id: 1,
+    image: IMG25,
+    title: '',
+    showDemo: false,
+    demo: 'https://github.com',
+  },
+  {
+    id: 1,
+    image: IMG26,
+    title: '',
+    showDemo: false,
+    demo: 'https://github.com',
+  },
+  {
+    id: 1,
+    image: IMG27,
+    title: '',
+    showDemo: false,
+    demo: 'https://github.com',
+  },
+  {
+    id: 1,
+    image: IMG28,
+    title: '',
+    showDemo: false,
+    demo: 'https://github.com',
   },
 ]
 
@@ -176,6 +274,27 @@ const Portfolio = () => {
       <div className='container portfolio__container'>
         {
           data.map(({ id, image, title, demo, showDemo }) => {
+            return (
+              <article key={id} className='portfolio__item'>
+                <div className="portfolio__item-image">
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <div className='portfolio__item-cta'>
+                  {showDemo &&
+                    <a href={demo} className='btn btn-primary'>Live Demo</a>}
+                </div>
+              </article>
+            )
+          })
+        }
+      </div>
+
+      <h3 className='portfolio__name'>Cinematic Sequence</h3>
+
+      <div className='container portfolio__container'>
+        {
+          cinseq.map(({ id, image, title, demo, showDemo }) => {
             return (
               <article key={id} className='portfolio__item'>
                 <div className="portfolio__item-image">
