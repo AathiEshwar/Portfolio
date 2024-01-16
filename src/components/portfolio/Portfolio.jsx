@@ -64,10 +64,10 @@ const cinseq = [
   },
   {
     id: 1,
-    image: IMG3,
+    image: IMG13,
     title: '',
     showDemo: true,
-    demo: 'https://drive.google.com/file/d/1pYjSPCMG6Z0NkBAcr_Ljjzhvb5meHb2Z/view?usp=sharing',
+    demo: 'https://drive.google.com/file/d/1Cmbnq4afNLOXyZRiNakR3rdhvQMgRxhd/view?usp=drive_web',
   },
 ]
 
