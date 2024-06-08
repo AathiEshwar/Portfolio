@@ -19,16 +19,14 @@ import IMG16 from '../../assets/maya3.jpg';
 import IMG17 from '../../assets/maya4.jpg';
 import IMG18 from '../../assets/maya5.jpg';
 import IMG19 from '../../assets/env1.png';
-import IMG20 from '../../assets/env2.png';
-import IMG21 from '../../assets/env3.png';
-import IMG22 from '../../assets/env4.png';
-import IMG23 from '../../assets/env5.png';
-import IMG24 from '../../assets/env6.png';
-import IMG25 from '../../assets/env7.png';
 import IMG26 from '../../assets/env8.png';
 import IMG27 from '../../assets/env9.png';
-import IMG28 from '../../assets/env10.png';
 import IMG29 from '../../assets/cinseq.jpeg';
+import IMG30 from '../../assets/extraction1.png';
+import IMG31 from '../../assets/extraction2.png';
+import IMG32 from '../../assets/extraction3.png';
+import IMG33 from '../../assets/extraction4.png';
+import IMG34 from '../../assets/extraction5.png';
 
 const data = [
   {
@@ -71,6 +69,44 @@ const cinseq = [
   },
 ]
 
+const extractMap = [
+  {
+    id: 1,
+    image: IMG30,
+    title: '',
+    showDemo: false,
+    demo: '',
+  },
+  {
+    id: 2,
+    image: IMG31,
+    title: '',
+    showDemo: false,
+    demo: '',
+  },
+  {
+    id: 3,
+    image: IMG32,
+    title: '',
+    showDemo: false,
+    demo: '',
+  },
+  {
+    id: 4,
+    image: IMG33,
+    title: '',
+    showDemo: false,
+    demo: '',
+  },
+  {
+    id: 5,
+    image: IMG34,
+    title: '',
+    showDemo: false,
+    demo: '',
+  },
+]
+
 const envScene = [
   {
     id: 1,
@@ -88,55 +124,6 @@ const envScene = [
   },
   {
     id: 1,
-    image: IMG20,
-    title: '',
-    showDemo: false,
-    demo: 'https://github.com',
-  },
-  {
-    id: 1,
-    image: IMG21,
-    title: '',
-    showDemo: false,
-    demo: 'https://github.com',
-  },
-  {
-    id: 1,
-    image: IMG22,
-    title: '',
-    showDemo: false,
-    demo: 'https://github.com',
-  },
-  {
-    id: 1,
-    image: IMG23,
-    title: '',
-    showDemo: false,
-    demo: 'https://github.com',
-  },
-  {
-    id: 1,
-    image: IMG24,
-    title: '',
-    showDemo: false,
-    demo: 'https://github.com',
-  },
-  {
-    id: 1,
-    image: IMG24,
-    title: '',
-    showDemo: false,
-    demo: 'https://github.com',
-  },
-  {
-    id: 1,
-    image: IMG25,
-    title: '',
-    showDemo: false,
-    demo: 'https://github.com',
-  },
-  {
-    id: 1,
     image: IMG26,
     title: '',
     showDemo: false,
@@ -145,13 +132,6 @@ const envScene = [
   {
     id: 1,
     image: IMG27,
-    title: '',
-    showDemo: false,
-    demo: 'https://github.com',
-  },
-  {
-    id: 1,
-    image: IMG28,
     title: '',
     showDemo: false,
     demo: 'https://github.com',
@@ -269,6 +249,34 @@ const Portfolio = () => {
     <section id='portfolio'>
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
+
+      <h3 className='portfolio__name'>Android shipped titles</h3>
+
+      <div className='container portfolio__container'>
+        {
+          <>
+            <article className='portfolio__item'>
+              <h3>Wildrun: Safari Shooter</h3>
+              <div className='portfolio__item-cta'>
+                <a href="https://play.google.com/store/apps/details?id=com.dumadu.wildsafarishooter" className='btn btn-primary'>Playstore link</a>
+              </div>
+            </article>
+            <article className='portfolio__item'>
+              <h3>TrackMaster: Train Puzzle</h3>
+              <div className='portfolio__item-cta'>
+                <a href="https://play.google.com/store/apps/details?id=com.lv.gp.trackmastertrainpuzzle" className='btn btn-primary'>Playstore link</a>
+              </div>
+            </article>
+            <article className='portfolio__item'>
+              <h3>Games tested and bug fixes</h3>
+              <div className='portfolio__item-cta'>
+                <a href="hhttps://play.google.com/store/apps/details?id=com.dumadugames.farkleblast" className='btn btn-primary'>Playstore link</a>
+              </div>
+            </article>
+          </>
+        }
+      </div>
+
       <h3 className='portfolio__name'>Top Down View Game</h3>
 
       <div className='container portfolio__container'>
@@ -295,6 +303,27 @@ const Portfolio = () => {
       <div className='container portfolio__container'>
         {
           cinseq.map(({ id, image, title, demo, showDemo }) => {
+            return (
+              <article key={id} className='portfolio__item'>
+                <div className="portfolio__item-image">
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <div className='portfolio__item-cta'>
+                  {showDemo &&
+                    <a href={demo} className='btn btn-primary'>Live Demo</a>}
+                </div>
+              </article>
+            )
+          })
+        }
+      </div>
+
+      <h3 className='portfolio__name'>Extraction Map</h3>
+
+      <div className='container portfolio__container'>
+        {
+          extractMap.map(({ id, image, title, demo, showDemo }) => {
             return (
               <article key={id} className='portfolio__item'>
                 <div className="portfolio__item-image">

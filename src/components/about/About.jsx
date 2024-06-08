@@ -28,15 +28,7 @@ const About = () => {
           </div>
 
           <p>
-            Dedicated and creative Game Developer and
-            Designer with 1 year of experience in the video
-            game industry.
-            Collaborated cross-functionally to conceptualize, develop, and design
-            gameplay features, mechanics, and systems for mobile.Contributed to the
-            ideation, creation, and refinement of game concepts, narratives, and
-            immersive game worlds. Designed and implemented engaging gameplay
-            mechanics, including character interactions, combat systems, and user
-            interfaces.
+          With a dynamic fusion of technical artistry and game design prowess, I bring two years of immersive experience to the gaming realm. As a seasoned technical artist within the Unreal Engine environment for one year, I've honed my skills in optimizing performance and enhancing visual fidelity. My versatility extends to game design, where I've spent another year crafting captivating gaming experiences. Specializing in 3D character modeling, animation, and rigging, I breathe life into virtual worlds with meticulous attention to detail. My portfolio stands as a testament to my commitment to innovation and my ability to seamlessly blend artistry with technology in the ever-evolving landscape of game development.
           </p>
           <a href='#contact' className='btn btn-primary'>Let's Talk</a>
         </div>
