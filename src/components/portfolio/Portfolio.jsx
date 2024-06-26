@@ -27,6 +27,8 @@ import IMG31 from '../../assets/extraction2.png';
 import IMG32 from '../../assets/extraction3.png';
 import IMG33 from '../../assets/extraction4.png';
 import IMG34 from '../../assets/extraction5.png';
+import Document1 from '../../assets/Document1.pdf';
+import Document2 from '../../assets/Document2.pdf';
 
 const data = [
   {
@@ -275,6 +277,12 @@ const Portfolio = () => {
             </article>
           </>
         }
+      </div>
+
+      <h3 className='portfolio__name'>Game Design Documents</h3>
+      <div className='documents'>
+        <a href={Document1} download className='btn'>Document 1</a>
+        <a href={Document2} download className='btn'>Document 2</a>
       </div>
 
       <h3 className='portfolio__name'>Top Down View Game</h3>
