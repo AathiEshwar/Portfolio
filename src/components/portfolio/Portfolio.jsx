@@ -29,6 +29,7 @@ import IMG33 from '../../assets/extraction4.png';
 import IMG34 from '../../assets/extraction5.png';
 import Document1 from '../../assets/Document1.pdf';
 import Document2 from '../../assets/Document2.pdf';
+import Document3 from '../../assets/Document3.pdf';
 
 const data = [
   {
@@ -272,7 +273,7 @@ const Portfolio = () => {
             <article className='portfolio__item'>
               <h3>Games tested and bug fixes</h3>
               <div className='portfolio__item-cta'>
-                <a href="hhttps://play.google.com/store/apps/details?id=com.dumadugames.farkleblast" className='btn btn-primary'>Playstore link</a>
+                <a href="https://play.google.com/store/apps/details?id=com.dumadugames.farkleblast" className='btn btn-primary'>Playstore link</a>
               </div>
             </article>
           </>
@@ -283,6 +284,7 @@ const Portfolio = () => {
       <div className='documents'>
         <a href={Document1} download className='btn'>Document 1</a>
         <a href={Document2} download className='btn'>Document 2</a>
+        <a href={Document3} download className='btn'>Document 3</a>
       </div>
 
       <h3 className='portfolio__name'>Top Down View Game</h3>
