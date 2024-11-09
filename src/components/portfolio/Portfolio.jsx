@@ -284,7 +284,7 @@ const Portfolio = () => {
       <div className='documents'>
         <a href={Document1} download className='btn'>Document 1</a>
         <a href={Document2} download className='btn'>Document 2</a>
-        <a href={Document3} download className='btn'>Document 3</a>
+        <a target='_blank' href={Document3} download className='btn'>Document 3</a>
         <a target='_blank' href="https://drive.google.com/drive/folders/1gBhbDHEFVdNBHm6AFBsddeFfQ5GDyND1" className='btn'>Document 4</a>
       </div>
 
